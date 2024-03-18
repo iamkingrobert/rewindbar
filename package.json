@@ -1,8 +1,8 @@
 {
-  "name": "rewindbar-site",
+  "name": "rewindbar",
   "version": "1.0.0",
   "private": true,
-  "description": "rewindbar-site",
+  "description": "rewindbar",
   "author": "King Robert Kehinde",
   "keywords": [
     "gatsby"

@@ -1,14 +1,24 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import Logo from "../images/logo.png";
-import callIcon from "../images/phone-call.png";
-import Humburger from "../images/hamburger.png";
+import Logo from "/src/images/logo.png";
+import callIcon from "/src/images/phone-call.png";
+import Humburger from "/src/images/icon.png";
 
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const Callto = ({ phone, children }) => {
-    return <Link to={`tel:${phone}`} className="text-[13px] inline-flex items-center gap-x-1"><div><img src={callIcon} /></div> +1(202) 877 8789</Link>;
+    return (
+      <Link
+        to={`tel:${phone}`}
+        className="text-[13px] inline-flex items-center gap-x-1"
+      >
+        <div>
+          <img src={callIcon} alt="Tel" />
+        </div>{" "}
+        +1(800)-890-0338
+      </Link>
+    );
   };
 
   return (
@@ -20,7 +30,7 @@ export default function Navbar() {
         <div className="flex space-x-10 lg:px-10 px-3 font-semibold">
           {/* Left Navbar Items */}
           <Link to="/">
-            <img src={Logo} alt="REWINDBAR Logo" />
+            <img src={Logo} alt="REWINDBAR" />
           </Link>
 
           <Link className="hidden lg:block" to="/pricing">
@@ -33,11 +43,11 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <div className="flex items-center lg:hidden">
-        <Callto phone="+1(800)-890-0338"> +1(800)-890-0338</Callto>
+          <Callto phone="+1(800)-890-0338"> +1(800)-890-0338</Callto>
           <button className="p-3" onClick={() => setShowSidebar(!showSidebar)}>
             {!showSidebar ? (
               <div>
-                <img src={Humburger} alt="hamburger"/>
+                <img src={Humburger} alt="Menu icon" />
               </div>
             ) : (
               ""

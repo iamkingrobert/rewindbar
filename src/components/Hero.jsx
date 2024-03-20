@@ -1,16 +1,16 @@
 import React from "react";
-import heroImg from "/src/images/heroImg.png";
-// import arrow from "/src/images/icon.png";
+import heroImage from "/src/images/heroImg.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full">
       <div className="bg-[#E3E7EA] h-[444px] lg:block hidden "></div>
       <div className="lg:absolute top-20 w-full lg:flex">
         <div className="lg:w-[612px] w-full lg:h-[520px] bg-gray-700">
           <img
-            src={heroImg}
-            alt="heroImg"
+            src={heroImage}
+            alt="Facial Treatment Image"
             className="object-cover w-full h-full"
           />
         </div>
@@ -23,9 +23,10 @@ function Hero() {
             Whether you’re looking to restore lost volume with dermal fillers or
             enhance your beauty with lip fillers, we've got it all covered.
           </p>
-          {/* <button className="bg-[#2C343B] inline-flex items-center justify-center  w-[264px] h-[56px] text-white  my-10">
-            Book now <img src={arrow} className="ms-3" alt="" />
-          </button> */}
+          <button className="bg-[#2C343B] inline-flex items-center justify-center w-[264px] h-[56px] text-white my-10 space-x-2">
+            <p className="text-18px self-center">Book now</p>{" "}
+            <FaLongArrowAltRight className="self-center pt-1" />
+          </button>
         </div>
       </div>
     </div>

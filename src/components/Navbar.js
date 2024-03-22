@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import Logo from "/src/images/logo.png";
 import callIcon from "/src/images/phone-call.png";
-import Humburger from "/src/images/icon.png";
+import Humburger from "/src/images/hamburger.png";
 
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);

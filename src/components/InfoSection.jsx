@@ -3,7 +3,7 @@ import Model from "/src/images/Model.jpg";
 export default function InfoSection() {
   return (
     <>
-      <div className="relative mt-[220px]">
+      <div className="relative">
         <div className="lg:absolute top-[30px] w-full lg:flex space-x-[100px] justify-center">
           <div className="w-[456px] h-[96px] -ml-[200px]">
             <h3 className="text-[36px] font-normal leading-[48px] text-[#2C343B]">

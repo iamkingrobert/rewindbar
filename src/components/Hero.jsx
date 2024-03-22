@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full lg:h-[600px]">
       <div className="bg-[#E3E7EA] h-[444px] lg:block hidden "></div>
       <div className="lg:absolute top-20 w-full lg:flex">
         <div className="lg:w-[612px] w-full lg:h-[520px] bg-gray-700">
